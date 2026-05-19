@@ -1,0 +1,96 @@
+﻿<Window x:Class="ToyStore.Windows.AddEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Товар"
+        Height="700"
+        Width="500"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Arial"
+        Icon="/Images/icon.ico"
+        Background="White">
+
+    <ScrollViewer>
+
+        <Grid Margin="20">
+
+            <Border Background="#F5DEB3"
+                    Padding="20"
+                    CornerRadius="10">
+
+                <StackPanel>
+
+                    <Image Source="/Images/icon.png"
+       Width="60"
+       Height="60"
+       Stretch="Uniform"
+       Margin="0 0 20 0"/>
+                    <TextBlock Text="Артикул"/>
+                    <TextBox x:Name="ArticleTextBox"
+                             Height="30"
+                             Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Наименование товара"/>
+                    <TextBox x:Name="NameTextBox"
+                             Height="30"
+                             Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Единица измерения"/>
+                    <TextBox x:Name="UnitTextBox"
+                             Height="30"
+                             Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Цена"/>
+                    <TextBox x:Name="PriceTextBox"
+                             Height="30"
+                             Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Скидка"/>
+                    <TextBox x:Name="DiscountTextBox"
+                             Height="30"
+                             Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Количество"/>
+                    <TextBox x:Name="CountTextBox"
+                             Height="30"
+                             Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Описание"/>
+                    <TextBox x:Name="DescriptionTextBox"
+                             Height="80"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"
+                             Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Фото"/>
+                    <TextBox x:Name="PhotoTextBox"
+                             Height="30"
+                             Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Категория"/>
+                    <ComboBox x:Name="CategoryComboBox"
+                              Height="30"
+                              Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Поставщик"/>
+                    <ComboBox x:Name="SupplierComboBox"
+                              Height="30"
+                              Margin="0 5 0 15"/>
+
+                    <TextBlock Text="Производитель"/>
+                    <ComboBox x:Name="ManufacturerComboBox"
+                              Height="30"
+                              Margin="0 5 0 15"/>
+
+                    <Button Content="Сохранить"
+                            Height="40"
+                            Background="#DEB887"
+                            Click="SaveButton_Click"/>
+
+                </StackPanel>
+
+            </Border>
+
+        </Grid>
+
+    </ScrollViewer>
+</Window>
